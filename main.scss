@@ -1,0 +1,15 @@
+@import "./base/reset";
+@import "./base/default";
+@import "./base/normalize";
+
+@import "./utils/variables";
+@import "./utils/mixin";
+
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/about";
+@import "./layouts/barbers";
+@import "./layouts/footer";
+@import "./layouts/menu";
+@import "./layouts/services";
+@import "./layouts/whycome";

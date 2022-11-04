@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+*:focus {
+  border: 1px solid var(--focus-color);
+}
+.body {
+  max-width: 1600px;
+  background-color: #e5e5e5;
+}
+/* -----------------------стилізація секцій----------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    // @include mobile {
+    //     font-size: 28px;
+    // }
+
+    // @include tablet {
+    //     font-size: 28px;
+    // }
+
+    // @include desktop {
+    //     font-size: 36px;
+    // }
+  }
+}
+
+// /* -----------------------Стилізація основного контейнеру----------------------- */
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    height: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    height: auto;
+  }
+}
+
+.container.section {
+  padding-top: 0px;
+}
